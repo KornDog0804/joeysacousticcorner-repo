@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="repository.joeysacousticcorner"
+       name="Joey’s Acoustic Corner Repo"
+       version="1.0.0"
+       provider-name="Joey">
+  <extension point="xbmc.addon.repository"
+             name="Joey’s Acoustic Corner Repo">
+    <info compressed="false">https://YOUR_DOMAIN_HERE/repo/index.xml</info>
+    <checksum>https://YOUR_DOMAIN_HERE/repo/index.xml.md5</checksum>
+    <datadir zip="true">https://YOUR_DOMAIN_HERE/repo/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Auto-updates for Joey’s Acoustic Corner</summary>
+    <description>Repository for Joey’s Acoustic Corner Kodi add-on.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.joeysacousticcorner" name="Joey's Acoustic Corner" version="1.0.7" provider-name="Joey">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Stripped &amp; Unplugged Sessions</summary>
+    <description>Hand-picked acoustic, unplugged, and stripped sessions.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
